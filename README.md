@@ -1,1 +1,1 @@
-# BusinessDiagnoticsTool
+# MEST BDT Project
