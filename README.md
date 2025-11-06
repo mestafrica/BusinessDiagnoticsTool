@@ -64,7 +64,7 @@ The backend application will be running on `http://localhost:3000`.
    npm run dev
    ```
 
-The frontend application will be running on `http://localhost:3001`.
+The frontend application will be running on `http://localhost:3000`.
 
 ## API Documentation
 
