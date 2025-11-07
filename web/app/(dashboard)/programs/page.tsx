@@ -121,7 +121,7 @@ export default function Programs() {
             </div>
             <div className="flex items-center gap-2 mt-2">
               <Calendar className="w-4 h-4 text-gray-500" />
-              <p className="text-gray-600 text-sm">March 17, 2025 - Jun 7, 2025</p>
+              <p className="text-gray-600 text-sm">March 17, 2025 - Jun 7, 2026</p>
               </div>
           </div>
           </div>
