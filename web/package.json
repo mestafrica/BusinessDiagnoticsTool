@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "format": "prettier --write \"**/*.tsx\" \"**/*.ts\"",
+    "format": "prettier --write \"src/**/*.tsx\" \"src/**/*.ts\"",
     "start": "next start",
     "lint": "eslint"
   },
