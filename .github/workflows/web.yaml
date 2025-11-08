@@ -3,7 +3,7 @@ env:
   VERCEL_ORG_ID: team_GXgJz62Ree8hraZWXLQCT3zP
   VERCEL_PROJECT_ID: prj_MNqDRnGxVT9JeBEbgdNTp3tlmoqB
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   ci:
