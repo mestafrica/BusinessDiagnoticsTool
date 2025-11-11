@@ -1,5 +1,6 @@
 import { Eye, Trash2, Users, Dot, Calendar } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Programs() {
   return (
@@ -7,16 +8,17 @@ export default function Programs() {
       <div className="flex flex-col bg-gray-200 p-6">
         <section className=" flex justify-between ">
           <div>
-            <h1 className="text-xl text-black font-bold">
+            <h1 className="text-2xl text-black font-bold">
               Programs Management
             </h1>
-            <p className="mt-2 text-black text-lg">list of Programs</p>
+            <p className="mt-2 text-black font-medium text-lg">List of Programs</p>
           </div>
           <div>
+           <Link href={'/programs/add'} >
             <button className="bg-black p-2 text-white rounded-lg cursor-pointer">
               {" "}
               + Add Program
-            </button>
+            </button></Link>
           </div>
         </section>
         <section className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 ">
