@@ -1,20 +1,21 @@
 import Image from "next/image";
 
-export default function ViewProgramPage() {
+export default function ViewCohortPage() {
   return (
     <div className="p-6 sm:p-10 min-h-screen bg-gray-100 dark:bg-[#0b0c10] text-gray-900 dark:text-gray-100 transition-colors duration-300">
+      
       {/* Header */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8">
         <h1 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-0">
-          Program Details
+          Cohort Details
         </h1>
 
         <div className="flex flex-wrap gap-3">
           <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm transition">
-            Edit Program
+            Edit Cohort
           </button>
           <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm transition">
-            Delete Program
+            Delete Cohort
           </button>
         </div>
       </div>
@@ -22,8 +23,8 @@ export default function ViewProgramPage() {
       {/* Image Section */}
       <div className="relative mb-10">
         <Image
-          src="https://i.pinimg.com/1200x/a3/51/30/a35130edc8113b0b747ed58f84fa3f8c.jpg"
-          alt="Program Image"
+          src="https://i.pinimg.com/1200x/2f/94/e1/2f94e1314b23dda5338f32b587489d90.jpg"
+          alt="Cohort Image"
           width={1200}
           height={500}
           quality={100}
@@ -34,7 +35,7 @@ export default function ViewProgramPage() {
         </p>
       </div>
 
-      {/* Summary Information */}
+      {/* Summary Section */}
       <div className="bg-white dark:bg-[#1a1d24] p-6 rounded-2xl shadow-md mb-10">
         <h2 className="text-lg font-semibold mb-5 text-gray-800 dark:text-gray-200">
           Summary Information
@@ -42,28 +43,23 @@ export default function ViewProgramPage() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-5 text-sm">
           <div>
-            <p className="text-gray-500 dark:text-gray-400">Program Name</p>
-            <p className="font-semibold">Technical Skills Bootcamp</p>
+            <p className="text-gray-500 dark:text-gray-400">Cohort Name</p>
+            <p className="font-semibold">MEST Cohort 2025</p>
+          </div>
+
+          <div>
+            <p className="text-gray-500 dark:text-gray-400">Program</p>
+            <p className="font-semibold">Tech for Growth</p>
           </div>
 
           <div>
             <p className="text-gray-500 dark:text-gray-400">Start Date</p>
-            <p className="font-semibold">March 17, 2025</p>
+            <p className="font-semibold">January 10, 2025</p>
           </div>
 
           <div>
             <p className="text-gray-500 dark:text-gray-400">End Date</p>
-            <p className="font-semibold">June 7, 2025</p>
-          </div>
-
-          <div>
-            <p className="text-gray-500 dark:text-gray-400">Cohort</p>
-            <p className="font-semibold">2025 Spring Cohort</p>
-          </div>
-
-          <div>
-            <p className="text-gray-500 dark:text-gray-400">Participants</p>
-            <p className="font-semibold">24</p>
+            <p className="font-semibold">July 28, 2025</p>
           </div>
 
           <div>
@@ -71,6 +67,11 @@ export default function ViewProgramPage() {
             <p className="font-semibold text-green-600 dark:text-green-400">
               Active
             </p>
+          </div>
+
+          <div>
+            <p className="text-gray-500 dark:text-gray-400">Total Participants</p>
+            <p className="font-semibold">25</p>
           </div>
         </div>
       </div>
@@ -81,10 +82,10 @@ export default function ViewProgramPage() {
           Description
         </h2>
         <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-          The Technical Skills Bootcamp is a hands-on program focused on developing
-          practical technology and business skills. Participants work on real-world
-          projects while receiving mentorship to strengthen their understanding of
-          product development, teamwork, and innovation.
+          This cohort provides participants with technical and business-oriented
+          training aimed at developing innovative solutions. Through mentorship
+          and collaboration, members gain real-world experience and prepare to
+          contribute meaningfully to technology and entrepreneurship in Africa.
         </p>
       </div>
     </div>
