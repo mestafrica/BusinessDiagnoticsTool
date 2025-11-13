@@ -81,7 +81,7 @@ export default function EditProgram() {
          </div>
           <div className="mt-10 border border-t-gray-400  "></div>
           <div className="w-[95%] mx-auto mt-4">
-            <h2 className="text-sm">Image URL *</h2>
+            <h2 className="text-sm">Image URL <span className="text-red-700">*</span></h2>
             <div>
               <input type="file"  placeholder=" https://example.com/image.jpg" className="bg-gray-100 px-4 py-3 rounded-lg text-sm w-full mt-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
             </div>
