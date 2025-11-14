@@ -8,7 +8,6 @@ import {
   Delete,
 } from '@nestjs/common';
 import { ProgramsService } from './programs.service';
-import { CreateProgramDto } from './dto/create-program.dto';
 import { UpdateProgramDto } from './dto/update-program.dto';
 import { Program } from './schemas/program.schema';
 
@@ -17,8 +16,10 @@ export class ProgramsController {
   constructor(private readonly programsService: ProgramsService) {}
 
   @Post()
-  async create(@Body() body:{name:string; description: string}): Promise<Program> {
-    const {name, description} = body;
+  async create(
+    @Body() body: { name: string; description: string },
+  ): Promise<Program> {
+    const { name, description } = body;
     return this.programsService.create(name, description);
   }
 
@@ -33,7 +34,10 @@ export class ProgramsController {
   }
 
   @Patch(':id')
-  async update(@Param('id') id: string, @Body() UpdateProgramDto:UpdateProgramDto) {
+  async update(
+    @Param('id') id: string,
+    @Body() UpdateProgramDto: UpdateProgramDto,
+  ) {
     return this.programsService.update(id, UpdateProgramDto);
   }
 
